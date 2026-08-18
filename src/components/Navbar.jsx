@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Compass, Menu, X } from 'lucide-react'
 
-function Navbar({ compassClickCount, onCompassClick }) {
+function Navbar({ compassClickCount, onCompassClick, onOpenPlanner }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -32,7 +32,10 @@ function Navbar({ compassClickCount, onCompassClick }) {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <a href="#" className="text-text-secondary hover:text-text-main transition-colors">Sign in</a>
-            <button className="bg-primary-blue hover:bg-primary-brightBlue text-white px-4 py-2 rounded-lg font-medium transition-all hover:scale-105">
+            <button 
+              onClick={onOpenPlanner}
+              className="bg-primary-blue hover:bg-primary-brightBlue text-white px-4 py-2 rounded-lg font-medium transition-all hover:scale-105"
+            >
               Build My Roadmap →
             </button>
           </div>
@@ -59,7 +62,10 @@ function Navbar({ compassClickCount, onCompassClick }) {
             <a href="#resources" className="block text-text-secondary hover:text-text-main py-2">Resources</a>
             <div className="pt-3 border-t border-border space-y-3">
               <a href="#" className="block text-text-secondary hover:text-text-main py-2">Sign in</a>
-              <button className="w-full bg-primary-blue hover:bg-primary-brightBlue text-white px-4 py-2 rounded-lg font-medium transition-all">
+              <button 
+                onClick={onOpenPlanner}
+                className="w-full bg-primary-blue hover:bg-primary-brightBlue text-white px-4 py-2 rounded-lg font-medium transition-all"
+              >
                 Build My Roadmap →
               </button>
             </div>

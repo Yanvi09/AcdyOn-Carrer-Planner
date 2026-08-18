@@ -13,25 +13,31 @@ import FounderMode from './components/FounderMode'
 
 function App() {
   const [compassClickCount, setCompassClickCount] = useState(0)
+  const [isPlannerOpen, setIsPlannerOpen] = useState(false)
 
   const handleCompassClick = () => {
     setCompassClickCount(prev => prev + 1)
+  }
+
+  const handleOpenPlanner = () => {
+    setIsPlannerOpen(true)
   }
 
   return (
     <div className="min-h-screen bg-primary-background text-text-main">
       <Navbar 
         compassClickCount={compassClickCount} 
-        onCompassClick={handleCompassClick} 
+        onCompassClick={handleCompassClick}
+        onOpenPlanner={handleOpenPlanner}
       />
-      <Hero />
-      <CareerPlanner />
+      <Hero onOpenPlanner={handleOpenPlanner} />
+      <CareerPlanner isOpen={isPlannerOpen} onClose={() => setIsPlannerOpen(false)} />
       <HowItWorks />
       <DestinationRoute />
       <RoadmapPreview />
       <CareerPhases />
       <Mentorship />
-      <FinalCTA />
+      <FinalCTA onOpenPlanner={handleOpenPlanner} />
       <Footer />
       <FounderMode clickCount={compassClickCount} />
     </div>

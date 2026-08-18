@@ -1,4 +1,4 @@
-function Hero() {
+function Hero({ onOpenPlanner }) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Grid background */}
@@ -28,7 +28,10 @@ function Hero() {
             </p>
             
             <div className="space-y-4">
-              <button className="bg-primary-blue hover:bg-primary-brightBlue text-white px-8 py-4 rounded-lg font-medium text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-blue/20">
+              <button 
+                onClick={onOpenPlanner}
+                className="bg-primary-blue hover:bg-primary-brightBlue text-white px-8 py-4 rounded-lg font-medium text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-blue/20"
+              >
                 Build My Career Roadmap →
               </button>
               
