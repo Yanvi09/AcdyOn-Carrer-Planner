@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 function CareerPhases() {
+  const [activePhase, setActivePhase] = useState(null)
+  
   const phases = [
     {
       name: 'Learn',
@@ -40,7 +44,16 @@ function CareerPhases() {
         <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-8">
           {phases.map((phase, index) => (
             <div key={phase.name} className="flex items-center">
-              <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6 text-center min-w-[100px] sm:min-w-[140px] hover:border-primary-cyan/30 transition-all">
+              <div 
+                className={`bg-primary-card border border-border rounded-xl p-4 sm:p-6 text-center min-w-[100px] sm:min-w-[140px] transition-all duration-200 cursor-pointer ${
+                  activePhase === index 
+                    ? 'border-primary-cyan/50 bg-primary-cyan/5 -translate-y-1' 
+                    : 'hover:border-primary-cyan/30 hover:-translate-y-0.5'
+                }`}
+                onMouseEnter={() => setActivePhase(index)}
+                onMouseLeave={() => setActivePhase(null)}
+                onClick={() => setActivePhase(index)}
+              >
                 <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">{phase.icon}</div>
                 <h3 className="text-text-main font-semibold text-sm sm:text-base mb-1">{phase.name}</h3>
                 <p className="text-text-muted text-xs">{phase.description}</p>
