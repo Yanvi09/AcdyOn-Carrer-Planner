@@ -1,4 +1,4 @@
-function Hero({ onOpenPlanner }) {
+function Hero({ onOpenPlanner = () => {} }) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Grid background */}

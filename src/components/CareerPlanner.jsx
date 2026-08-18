@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { X, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { roadmapData } from '../data/roadmapData'
 
-function CareerPlanner({ isOpen, onClose }) {
+function CareerPlanner({ isOpen = false, onClose = () => {} }) {
   const [step, setStep] = useState(1)
   const [plannerData, setPlannerData] = useState({
     space: '',

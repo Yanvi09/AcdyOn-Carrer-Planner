@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Compass, Menu, X } from 'lucide-react'
 
-function Navbar({ compassClickCount, onCompassClick, onOpenPlanner }) {
+function Navbar({ compassClickCount = 0, onCompassClick = () => {}, onOpenPlanner = () => {} }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
