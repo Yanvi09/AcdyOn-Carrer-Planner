@@ -1,4 +1,15 @@
+import { useState } from 'react'
+
 function DestinationRoute() {
+  const [hoveredItem, setHoveredItem] = useState(null)
+
+  const mapping = {
+    'Role': 'Skills',
+    'Company': 'Projects', 
+    'Income': 'Readiness',
+    'Timeline': 'Practice'
+  }
+
   return (
     <section className="py-12 sm:py-20 bg-primary-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,8 +27,16 @@ function DestinationRoute() {
                 { label: 'Company', value: 'Your target company' },
                 { label: 'Income', value: 'Your target income' },
                 { label: 'Timeline', value: 'Your available time' }
-              ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-2 sm:space-x-4">
+              ].map((item) => (
+                <div 
+                  key={item.label}
+                  className={`flex items-center space-x-2 sm:space-x-4 cursor-pointer transition-all rounded-lg p-2 sm:p-0 ${
+                    hoveredItem === item.label ? 'bg-primary-blue/10' : ''
+                  }`}
+                  onMouseEnter={() => setHoveredItem(item.label)}
+                  onMouseLeave={() => setHoveredItem(null)}
+                  onClick={() => setHoveredItem(item.label)}
+                >
                   <div className="w-16 sm:w-24 text-text-muted text-xs sm:text-sm">{item.label}</div>
                   <div className="flex-1 h-px bg-border"></div>
                   <div className="text-text-main text-xs sm:text-sm">{item.value}</div>
@@ -43,13 +62,18 @@ function DestinationRoute() {
             
             <div className="space-y-3 sm:space-y-4">
               {[
-                { label: 'Skills', value: 'What you need to learn' },
-                { label: 'Projects', value: 'What you need to build' },
-                { label: 'Learning', value: 'Resources and paths' },
-                { label: 'Practice', value: 'Exercises and challenges' },
-                { label: 'Readiness', value: 'Interview preparation' }
-              ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-2 sm:space-x-4">
+                { label: 'Skills', value: 'What you need to learn', mapsFrom: 'Role' },
+                { label: 'Projects', value: 'What you need to build', mapsFrom: 'Company' },
+                { label: 'Learning', value: 'Resources and paths', mapsFrom: null },
+                { label: 'Practice', value: 'Exercises and challenges', mapsFrom: 'Timeline' },
+                { label: 'Readiness', value: 'Interview preparation', mapsFrom: 'Income' }
+              ].map((item) => (
+                <div 
+                  key={item.label}
+                  className={`flex items-center space-x-2 sm:space-x-4 transition-all rounded-lg p-2 sm:p-0 ${
+                    hoveredItem === item.mapsFrom ? 'bg-primary-cyan/10 border border-primary-cyan/30' : ''
+                  }`}
+                >
                   <div className="w-16 sm:w-24 text-text-muted text-xs sm:text-sm">{item.label}</div>
                   <div className="flex-1 h-px bg-border"></div>
                   <div className="text-text-main text-xs sm:text-sm">{item.value}</div>
