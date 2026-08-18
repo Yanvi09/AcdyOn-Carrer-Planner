@@ -6,6 +6,7 @@ function FounderMode({ clickCount }) {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null)
 
+  // Only show the unlock button after exactly 5 clicks
   if (clickCount < 5) return null
 
   if (!isOpen) {
