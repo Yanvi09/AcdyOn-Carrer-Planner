@@ -15,7 +15,7 @@ function DestinationRoute() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-center">
           {/* Left panel - YOU DECIDE */}
-          <div className="bg-primary-card border border-border rounded-xl sm:rounded-2xl p-4 sm:p-8">
+          <div className="space-y-3 sm:space-y-4">
             <div className="flex items-center space-x-2 sm:space-x-3 mb-4 sm:mb-6">
               <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-primary-cyan"></div>
               <h3 className="text-text-main font-semibold text-base sm:text-lg">YOU DECIDE</h3>
@@ -54,7 +54,7 @@ function DestinationRoute() {
           </div>
 
           {/* Right panel - ACDYON MAPS */}
-          <div className="bg-primary-card border border-border rounded-xl sm:rounded-2xl p-4 sm:p-8">
+          <div className="space-y-3 sm:space-y-4">
             <div className="flex items-center space-x-2 sm:space-x-3 mb-4 sm:mb-6">
               <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-primary-blue"></div>
               <h3 className="text-text-main font-semibold text-base sm:text-lg">ACDYON MAPS</h3>
@@ -71,7 +71,7 @@ function DestinationRoute() {
                 <div 
                   key={item.label}
                   className={`flex items-center space-x-2 sm:space-x-4 transition-all rounded-lg p-2 sm:p-0 ${
-                    hoveredItem === item.mapsFrom ? 'bg-primary-cyan/10 border border-primary-cyan/30' : ''
+                    hoveredItem === item.mapsFrom ? 'bg-primary-cyan/10' : ''
                   }`}
                 >
                   <div className="w-16 sm:w-24 text-text-muted text-xs sm:text-sm">{item.label}</div>
