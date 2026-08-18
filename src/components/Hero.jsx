@@ -1,6 +1,6 @@
 function Hero({ onOpenPlanner = () => {} }) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Grid background */}
       <div className="absolute inset-0 grid-pattern opacity-50"></div>
       

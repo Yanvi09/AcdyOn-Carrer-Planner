@@ -6,6 +6,10 @@
   body {
     @apply bg-primary-background text-text-main;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer utilities {
@@ -14,6 +18,10 @@
       linear-gradient(rgba(120,150,255,0.08) 1px, transparent 1px),
       linear-gradient(90deg, rgba(120,150,255,0.08) 1px, transparent 1px);
     background-size: 50px 50px;
+  }
+  
+  .section-scroll-margin {
+    scroll-margin-top: 5rem;
   }
   
   .fade-in {

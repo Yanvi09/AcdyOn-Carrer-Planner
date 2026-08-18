@@ -1,6 +1,6 @@
 function Mentorship() {
   return (
-    <section id="mentorship" className="py-12 sm:py-20 bg-primary-background">
+    <section id="mentorship" className="py-12 sm:py-20 bg-primary-background section-scroll-margin">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
