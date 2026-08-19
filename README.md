@@ -74,26 +74,23 @@ The landing page is designed to communicate this idea within the first few secon
 ```
 
 Tech Stack
-->React
-->Tailwind CSS
-->Vite
-->JavaScript
-->Lucide React
+- **React
+- **Tailwind CSS
+- **Vite
+- **JavaScript
+- **Lucide React
 
-To run locally 
-
+- To run locally 
 Prerequisites: Make sure you have-
 
 ->Node.js
 ->npm
 
-Installation
+- Installation
+
 Clone the repository: git clone https://github.com/Yanvi09/AcdyOn-Carrer-Planner.git
-
 Move into the project: cd AcdyOn-Carrer-Planner
-
 Install dependencies: npm install
-
 Start the development server: npm run dev
 
 The application will be available at the local Vite URL shown in your terminal.
