@@ -52,7 +52,9 @@ The built files will be in the `dist` directory.
 
 ## Deployment
 
-*Deployment URL: [To be added]*
+GitHub Repository: https://github.com/Yanvi09/AcdyOn-Carrer-Planner.git
+
+Live Demo: [To be deployed]
 
 ## Project Structure
 
