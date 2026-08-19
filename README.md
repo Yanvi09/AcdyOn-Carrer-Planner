@@ -1,108 +1,124 @@
 # AcdyOn Career Planner
 
-**You set the destination. We map the route.**
+> You set the destination. We map the route.
 
-A premium career planning experience that turns your target role into a practical route. Choose your role, target company, income goal, and timeline — and get a personalized career roadmap with specific skills, projects, and preparation steps.
+AcdyOn Career Planner is a career-planning experience designed around a simple idea: career advice becomes more useful when it starts with a specific destination.
 
-## Product
+Instead of giving learners another generic list of courses, AcdyOn lets them define:
 
-AcdyOn Career Planner transforms career aspirations into actionable plans:
+**Role → Company → Income → Timeline**
 
-- **Destination**: Role → Company → Income → Timeline
-- **Route**: Skills → Projects → Learning → Practice → Readiness
+and turns that destination into a practical route:
 
-## Features
+**Skills → Projects → Learning → Practice → Readiness**
 
-- **Career Destination Planner**: Interactive step-by-step planner to define your career goals
-- **Personalized Roadmap Preview**: See your career route broken down into actionable phases
-- **Responsive Premium Landing Page**: Optimized for 390px mobile and 1440px desktop
-- **Roadmap Generation Interaction**: Real-time roadmap generation with smooth animations
-- **Founder Mode Easter Egg**: Hidden feature for discovering alternative career paths
+## Why AcdyOn?
 
-## Tech Stack
+Most career platforms focus on what you can learn.
 
-- **React**: Component-based UI library
-- **Tailwind CSS**: Utility-first CSS framework with custom color system
-- **Vite**: Fast build tool and development server
-- **Lucide React**: Icon library for UI elements
-- **JavaScript**: Simple, understandable code without TypeScript complexity
+AcdyOn starts with where you want to go.
 
-## Run Locally
+The landing page is designed to communicate that idea within the first few seconds and let users interact with a working career-planning flow.
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## What is included?
 
-2. **Start development server:**
-   ```bash
-   npm run dev
-   ```
+- Premium responsive landing page
+- Career destination planner
+- Role, company, income and timeline selection
+- Career roadmap preview
+- Interactive roadmap stages
+- Learn → Practice → Build → Prove → Interview journey
+- Responsive mobile navigation
+- Subtle hover and interaction states
+- Responsive layouts for mobile and desktop
+- Honest product/demo data
+- No fabricated testimonials, user counts, or company logos
 
-3. **Open in browser:**
-   Navigate to `http://localhost:5173` (or the port shown in terminal)
+## Product Flow
 
-## Build for Production
+```text
+Your Destination
+      ↓
+Role
+Company
+Income
+Timeline
+      ↓
+AcdyOn Maps
+      ↓
+Skills
+Projects
+Learning
+Practice
+Readiness
+      ↓
+Career Roadmap
+
+
+Tech Stack
+React
+Tailwind CSS
+Vite
+JavaScript
+Lucide React
+
+The implementation intentionally keeps the architecture simple and frontend-focused.
+
+Run Locally
+
+Clone the repository:
+
+git clone https://github.com/Yanvi09/AcdyOn-Carrer-Planner.git
+
+Enter the project:
+
+cd AcdyOn-Carrer-Planner
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+Build for production:
+
+npm run build
+Live Demo
+
+https://6a85753d9c68c85f0d2ca65e--adorable-blini-02e3b1.netlify.app/
+
+GitHub
+
+https://github.com/Yanvi09/AcdyOn-Carrer-Planner
+
+Assessment
+
+This project was built for the AcdyOn Technologies Frontend Challenge — Part 2: The Premium Home Page.
+
+The focus was on:
+
+Product thinking
+UI craft and visual hierarchy
+Responsive design
+Meaningful interaction
+Honest product presentation
+Simple, explainable implementation
+
+The goal was to create a homepage that communicates the product clearly within the first few seconds while still giving the user a small taste of the actual product experience.
+
+
+
+### One small recommendation
+
+
+After replacing your README, commit it separately:
+
 
 ```bash
-npm run build
-```
+git add README.md
+git commit -m "docs: finalize project README"
+git push
 
-The built files will be in the `dist` directory.
-
-## Deployment
-
-GitHub Repository: https://github.com/Yanvi09/AcdyOn-Carrer-Planner.git
-
-Live Demo: [To be deployed]
-
-## Project Structure
-
-```
-src/
-  components/
-    Navbar.jsx           # Premium navigation with compass icon
-    Hero.jsx             # Hero section with product preview
-    CareerPlanner.jsx    # Main interactive planner
-    HowItWorks.jsx       # 4-step process explanation
-    DestinationRoute.jsx # You decide vs AcdyOn maps
-    RoadmapPreview.jsx   # Product roadmap showcase
-    CareerPhases.jsx     # Learn → Practice → Build → Prove → Interview
-    Mentorship.jsx       # Guidance and expertise section
-    FinalCTA.jsx         # Final call-to-action
-    Footer.jsx           # Site footer with links
-    FounderMode.jsx      # Easter egg (5 compass clicks)
-  data/
-    roadmapData.js       # Rule-based roadmap data
-  App.jsx               # Main app component
-  main.jsx              # React entry point
-  index.css             # Global styles and animations
-```
-
-## Color System
-
-- **Primary Background**: `#080D20` (Deep navy)
-- **Secondary Navy**: `#0E1630`
-- **Card Background**: `#111A35`
-- **Primary Blue**: `#3155FF`
-- **Bright Blue**: `#4268FF`
-- **Cyan Accent**: `#5CCBFF`
-- **Main Text**: `#F7F9FF`
-- **Secondary Text**: `#B8C1D9`
-- **Muted Text**: `#7F8AA8`
-
-## Design Principles
-
-- **Premium Feel**: Deep navy background, electric blue CTAs, subtle grid pattern
-- **Editorial Typography**: Large, tight headlines with controlled line length
-- **Restrained Motion**: Subtle animations that earn their keep
-- **Mobile-First**: Responsive design optimized for 390px mobile width
-- **Simple Code**: Easy to explain line-by-line in an interview setting
-
-## Easter Egg
-
-Click the compass icon in the navbar **5 times** to unlock Founder Mode — a hidden feature for exploring alternative career paths beyond traditional employment.
-
-## License
-
-© 2024 AcdyOn. All rights reserved.
+Then your GitHub history will clearly show the documentation being finalized rather than hiding it inside a giant final commit.
