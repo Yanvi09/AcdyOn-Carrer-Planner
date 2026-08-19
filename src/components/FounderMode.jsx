@@ -1,10 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { X, Rocket, Lightbulb } from 'lucide-react'
 import { startupIdeas } from '../data/roadmapData'
 
-function FounderMode({ clickCount }) {
+function FounderMode() {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null)
+  const [clickCount, setClickCount] = useState(0)
+
+  const handleCompassClick = () => {
+    setClickCount(prev => prev + 1)
+  }
+
+  // Expose click handler globally for navbar to use
+  useEffect(() => {
+    window.founderModeClick = handleCompassClick
+    return () => {
+      window.founderModeClick = null
+    }
+  }, [])
 
   // Only show the unlock button after exactly 5 clicks
   if (clickCount < 5) return null

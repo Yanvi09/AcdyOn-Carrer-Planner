@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Compass, Menu, X } from 'lucide-react'
 
-function Navbar({ compassClickCount = 0, onCompassClick = () => {}, onOpenPlanner = () => {} }) {
+function Navbar({ onOpenPlanner = () => {} }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleNavClick = (e, href) => {
@@ -25,7 +25,11 @@ function Navbar({ compassClickCount = 0, onCompassClick = () => {}, onOpenPlanne
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <button 
-              onClick={onCompassClick}
+              onClick={() => {
+                if (window.founderModeClick) {
+                  window.founderModeClick()
+                }
+              }}
               className="p-2 hover:bg-primary-card rounded-lg transition-colors"
               aria-label="Brand icon"
             >

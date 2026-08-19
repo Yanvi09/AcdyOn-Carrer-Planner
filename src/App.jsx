@@ -12,12 +12,7 @@ import Footer from './components/Footer'
 import FounderMode from './components/FounderMode'
 
 function App() {
-  const [compassClickCount, setCompassClickCount] = useState(0)
   const [isPlannerOpen, setIsPlannerOpen] = useState(false)
-
-  const handleCompassClick = () => {
-    setCompassClickCount(prev => prev + 1)
-  }
 
   const handleOpenPlanner = () => {
     setIsPlannerOpen(true)
@@ -26,8 +21,6 @@ function App() {
   return (
     <div className="min-h-screen bg-primary-background text-text-main">
       <Navbar 
-        compassClickCount={compassClickCount} 
-        onCompassClick={handleCompassClick}
         onOpenPlanner={handleOpenPlanner}
       />
       <Hero onOpenPlanner={handleOpenPlanner} />
@@ -39,7 +32,7 @@ function App() {
       <Mentorship />
       <FinalCTA onOpenPlanner={handleOpenPlanner} />
       <Footer />
-      <FounderMode clickCount={compassClickCount} />
+      <FounderMode />
     </div>
   )
 }
