@@ -1,65 +1,39 @@
-# AcdyOn Career Planner - Design Decisions
+# Decisions — AcdyOn Career Planner
 
-## 1. Why this product direction?
+## Product & Track Choice
 
-AcdyOn Career Planner focuses on transforming **Role → Company → Income → Timeline** into **Skills → Projects → Learning → Practice → Readiness** because:
+I chose **Part 2 — the Premium Home Page** because I wanted to demonstrate my frontend skills through product design, responsive UI, and interaction rather than splitting my time across two different tracks.
 
-- **Clear Problem Statement**: Career planning is often vague and overwhelming. People know they want a specific role at a specific company with a target income, but they don't know the concrete steps to get there.
+For the product, I chose a career-planning experience because it fits naturally with AcdyOn's learning ecosystem. A student can have learning material but still struggle with what to learn first, what skills are needed for a target role, and how to turn learning into a career path. AcdyOn addresses that gap by starting with a destination — **Role, Company, Income, and Timeline** — and mapping it into **Skills, Projects, Learning, Practice, and Readiness**.
 
-- **Input-Output Clarity**: The destination inputs (role, company, income, timeline) are specific and actionable. The roadmap outputs (skills, projects, learning, practice, readiness) are equally concrete and measurable.
+## Technology Decisions
 
-- **Progress Tracking**: By breaking down the journey into phases (Foundations → Core Skills → Build & Ship → Interview Readiness), users can track progress and see incremental improvement.
+**React** — I chose React because the page has reusable UI sections and a small interactive career-planning flow. I preferred it over plain HTML/CSS because React made the structure easier to manage without adding much complexity.
 
-- **Practical Focus**: Unlike generic "learn more" advice, this approach connects abstract goals to specific skills, projects, and preparation activities that directly impact employability.
+**Tailwind CSS** — I chose Tailwind because the assessment was strongly focused on visual polish and responsive design. It allowed me to iterate quickly on spacing, typography, responsive layouts, and hover states instead of maintaining a large custom CSS file.
 
-- **Timeline-Aware**: Recognizing that people have different time constraints (3 months vs 18 months), the roadmap adapts the scope and intensity accordingly.
+**Vite** — I chose Vite because this is a frontend-focused React project and I wanted a fast, simple development setup. I did not need the additional complexity of a larger framework such as Next.js for a single landing page.
 
-This direction moves career planning from aspirational to actionable, addressing the gap between "I want this job" and "Here's exactly how to get it."
+**JavaScript** — I chose JavaScript instead of TypeScript because the project is relatively small and I wanted to keep the implementation straightforward and easy to explain within the time available.
 
-## 2. One Trade-off
+**Lucide React** — I used Lucide React for consistent interface icons instead of creating or sourcing custom SVG icons. This kept the visual system consistent while avoiding unnecessary design and implementation work.
 
-Under the assessment time limit, I chose a **rule-based roadmap demonstration** rather than building a real recommendation engine with persistent user data and AI-powered personalization.
+## 1. Why this approach over the alternative I rejected?
 
-**Why this trade-off?**
-- Rule-based roadmaps are deterministic, predictable, and easy to explain in an interview setting.
-- They demonstrate the core user experience without requiring complex backend infrastructure.
-- The frontend interactions and visual quality take priority over backend sophistication.
+For this assessment, the closest alternative was choosing the **scraper/data-ingestion track**. I rejected it because it would shift the focus away from the frontend skills I wanted to demonstrate.
 
-**What I would do with more time:**
-- Connect the planner to a real recommendation service that considers user's current skill level, learning pace, and market trends.
-- Implement persistent user data with authentication to save roadmaps and track progress over time.
-- Add AI-powered personalization that adapts the roadmap based on user feedback and completion rates.
-- Integrate real-time job market data to validate target companies and income expectations.
+I chose to go deeper on one polished landing-page experience instead of building a broader but less refined solution.
 
-## 3. AI Usage
+## 2. One trade-off under the time limit
 
-This project was built with AI assistance for code generation and design decisions. Here's a transparent breakdown:
+The main trade-off was interaction depth. The core career-planning flow works, but several supporting sections are intentionally visual/hover interactions rather than fully separate functional features.
 
-**AI-Assisted Areas:**
-- Initial project structure and component scaffolding
-- Tailwind CSS configuration and color system implementation
-- React component structure and state management patterns
-- Responsive design classes and mobile-first approach
-- Animation utilities and CSS keyframes
-- Roadmap data structure and sample content
-- Documentation structure (this file and README)
+With a real week, I would make those sections more functional and connect the roadmap to a more complete personalized career-planning experience with persistent user data.
 
-**Personally Reviewed, Simplified, Tested, and Changed:**
-- All components were reviewed for simplicity and understandability
-- Removed unnecessary abstractions and complex state management
-- Ensured all code follows the "simple enough for a recent graduate to explain" principle
-- Tested responsive behavior at 390px mobile and 1440px desktop breakpoints
-- Verified all interactions (Career Planner, Founder Mode, navigation)
-- Simplified animations to be subtle and purposeful rather than excessive
-- Ensured no fake testimonials, user counts, or company logos
-- Validated that the Easter egg works exactly as specified (5 compass clicks)
+## 3. AI usage and personal verification
 
-**Code Quality Principles Applied:**
-- Used simple `useState` instead of complex state management
-- Preferred props drilling over context providers where appropriate
-- Kept component structure flat and understandable
-- Used arrays and `.map()` for rendering lists
-- Applied Tailwind classes directly rather than creating excessive custom components
-- Ensured all animations earn their keep and serve the user experience
+I used AI tools for brainstorming, understanding implementation options, debugging, and getting feedback during development.
 
-The AI served as a force multiplier for implementation speed, while all design decisions, code simplification, and quality assurance were personally reviewed and adjusted to meet the assessment requirements.
+I personally tested the generated implementation, fixed configuration issues, checked the responsive layout at mobile and desktop sizes, simplified code where it was unnecessarily complex, and made the final product, design, and interaction decisions myself.
+
+The final implementation is intentionally simple enough for me to explain and defend without relying on "the AI suggested it."
