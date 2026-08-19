@@ -53,7 +53,7 @@ The landing page is designed to communicate this idea within the first few secon
 ## Product Flow
 
 ```text
-🎯 YOU DECIDE
+- YOU DECIDE
      │
      ├── Role
      ├── Company
@@ -61,7 +61,7 @@ The landing page is designed to communicate this idea within the first few secon
      └── Timeline
           │
           ▼
-🧭 ACdyOn MAPS
+- ACdyOn MAPS
           │
           ├── Skills
           ├── Projects
@@ -70,7 +70,7 @@ The landing page is designed to communicate this idea within the first few secon
           └── Readiness
           │
           ▼
-🚀 CAREER ROADMAP
+- CAREER ROADMAP
 ```
 
 Tech Stack
