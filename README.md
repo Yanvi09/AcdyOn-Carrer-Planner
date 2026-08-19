@@ -10,13 +10,13 @@ AcdyOn Career Planner is a career-planning experience built around one simple id
 
 Instead of another generic list of courses, AcdyOn starts with:
 
-### 🎯 Your Destination
+### Your Destination
 
 **Role** → **Company** → **Income** → **Timeline**
 
 ↓
 
-### 🧭 AcdyOn Maps Your Route
+### AcdyOn Maps Your Route
 
 **Skills** → **Projects** → **Learning** → **Practice** → **Readiness**
 
@@ -40,13 +40,13 @@ The landing page is designed to communicate this idea within the first few secon
 
 ## What is included?
 
-- 🎯 **Career destination planner** — Role, company, income and timeline
-- 🗺️ **Career roadmap** — A practical route from skills to readiness
-- 📚 **Learning progression** — Learn → Practice → Build → Prove → Interview
-- 📱 **Responsive experience** — Designed for mobile and desktop
-- ✨ **Micro-interactions** — Subtle hover and interaction states
-- 🎨 **Premium landing page** — Clear hierarchy and product-focused UI
-- 🔒 **Honest presentation** — No fabricated testimonials, user counts, or company logos
+- **Career destination planner** — Role, company, income and timeline
+- **Career roadmap** — A practical route from skills to readiness
+- **Learning progression** — Learn → Practice → Build → Prove → Interview
+- **Responsive experience** — Designed for mobile and desktop
+- **Micro-interactions** — Subtle hover and interaction states
+- **Premium landing page** — Clear hierarchy and product-focused UI
+- **Honest presentation** — No fabricated testimonials, user counts, or company logos
 
 ---
 
@@ -80,20 +80,19 @@ Tech Stack
 - **JavaScript
 - **Lucide React
 
-- To run locally 
+To Run Locally
 Prerequisites: Make sure you have-
+- Node.js
+- npm
 
-->Node.js
-->npm
+Installation
 
-- Installation
-
-Clone the repository: git clone https://github.com/Yanvi09/AcdyOn-Carrer-Planner.git
-Move into the project: cd AcdyOn-Carrer-Planner
-Install dependencies: npm install
-Start the development server: npm run dev
+- Clone the repository: git clone https://github.com/Yanvi09/AcdyOn-Carrer-Planner.git
+- Move into the project: cd AcdyOn-Carrer-Planner
+- Install dependencies: npm install
+- Start the development server: npm run dev
 
 The application will be available at the local Vite URL shown in your terminal.
 
 Production Build
-To create a production build: npm run build
+- To create a production build: npm run build
