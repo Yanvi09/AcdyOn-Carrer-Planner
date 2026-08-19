@@ -11,8 +11,8 @@ function Mentorship() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
-            <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-blue/10 flex items-center justify-center mb-3 sm:mb-4 mx-auto">
+            <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-primary-cyan/30 hover:shadow-lg hover:shadow-primary-blue/10 active:-translate-y-0.5 active:border-primary-cyan/20 active:scale-[0.99]">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-blue/10 flex items-center justify-center mb-3 sm:mb-4 mx-auto transition-all duration-200 ease-out hover:bg-primary-blue/20">
                 <span className="text-xl sm:text-2xl">🎯</span>
               </div>
               <h3 className="text-text-main font-semibold mb-2 text-sm sm:text-base">Role-Specific</h3>
@@ -21,8 +21,8 @@ function Mentorship() {
               </p>
             </div>
 
-            <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-blue/10 flex items-center justify-center mb-3 sm:mb-4 mx-auto">
+            <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-primary-cyan/30 hover:shadow-lg hover:shadow-primary-blue/10 active:-translate-y-0.5 active:border-primary-cyan/20 active:scale-[0.99]">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-blue/10 flex items-center justify-center mb-3 sm:mb-4 mx-auto transition-all duration-200 ease-out hover:bg-primary-blue/20">
                 <span className="text-xl sm:text-2xl">📊</span>
               </div>
               <h3 className="text-text-main font-semibold mb-2 text-sm sm:text-base">Data-Driven</h3>
@@ -31,8 +31,8 @@ function Mentorship() {
               </p>
             </div>
 
-            <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-blue/10 flex items-center justify-center mb-3 sm:mb-4 mx-auto">
+            <div className="bg-primary-card border border-border rounded-xl p-4 sm:p-6 transition-all duration-200 ease-out hover:-translate-y-1 hover:border-primary-cyan/30 hover:shadow-lg hover:shadow-primary-blue/10 active:-translate-y-0.5 active:border-primary-cyan/20 active:scale-[0.99]">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-blue/10 flex items-center justify-center mb-3 sm:mb-4 mx-auto transition-all duration-200 ease-out hover:bg-primary-blue/20">
                 <span className="text-xl sm:text-2xl">⚡</span>
               </div>
               <h3 className="text-text-main font-semibold mb-2 text-sm sm:text-base">Action-Oriented</h3>
