@@ -1,25 +1,36 @@
-# AcdyOn Career Planner  
-Live Demo:View AcdyOn Career Planner →
+# AcdyOn Career Planner
 
 > **You set the destination. We map the route.**
 
-AcdyOn Career Planner is a career-planning experience designed around a simple idea: career advice becomes more useful when it starts with a specific destination.
+[**Live Demo →**](https://6a85753d9c68c85f0d2ca65e--adorable-blini-02e3b1.netlify.app/)
 
-Instead of giving learners another generic list of courses, AcdyOn lets them define:
+AcdyOn Career Planner is a career-planning experience built around one simple idea:
 
-**Role → Company → Income → Timeline**
+> **Career advice becomes more useful when you start with a specific destination.**
 
-and turns that destination into a practical route:
+Instead of another generic list of courses, AcdyOn starts with:
 
-**Skills → Projects → Learning → Practice → Readiness**
+### 🎯 Your Destination
+
+**Role** → **Company** → **Income** → **Timeline**
+
+↓
+
+### 🧭 AcdyOn Maps Your Route
+
+**Skills** → **Projects** → **Learning** → **Practice** → **Readiness**
 
 ---
 
 ## Why AcdyOn Career Planner?
 
-Most career platforms focus on what you can learn.
+**Most career platforms:**
 
-AcdyOn starts with **where you want to go**.
+Learn more → Collect skills → Figure out what comes next
+
+**AcdyOn:**
+
+**Choose your destination → See your route → Build toward it**
 
 The experience lets users define a specific career destination and explore the route required to move toward it.
 
@@ -29,40 +40,37 @@ The landing page is designed to communicate this idea within the first few secon
 
 ## What is included?
 
-- Premium responsive landing page
-- Clear career-focused hero section
-- Career destination planner
-- Role, company, income and timeline selection
-- Career roadmap generation flow
-- Interactive roadmap stages
-- Learn → Practice → Build → Prove → Interview journey
-- Responsive mobile navigation
-- Subtle hover and interaction states
-- Responsive mobile and desktop layouts
-- Honest product/demo data
-- No fabricated testimonials, user counts, or company logos
+- 🎯 **Career destination planner** — Role, company, income and timeline
+- 🗺️ **Career roadmap** — A practical route from skills to readiness
+- 📚 **Learning progression** — Learn → Practice → Build → Prove → Interview
+- 📱 **Responsive experience** — Designed for mobile and desktop
+- ✨ **Micro-interactions** — Subtle hover and interaction states
+- 🎨 **Premium landing page** — Clear hierarchy and product-focused UI
+- 🔒 **Honest presentation** — No fabricated testimonials, user counts, or company logos
 
 ---
 
 ## Product Flow
 
-```
-Your Destination
-      ↓
-Role
-Company
-Income
-Timeline
-      ↓
-AcdyOn Maps
-      ↓
-Skills
-Projects
-Learning
-Practice
-Readiness
-      ↓
-Career Roadmap
+```text
+🎯 YOU DECIDE
+     │
+     ├── Role
+     ├── Company
+     ├── Income
+     └── Timeline
+          │
+          ▼
+🧭 ACdyOn MAPS
+          │
+          ├── Skills
+          ├── Projects
+          ├── Learning
+          ├── Practice
+          └── Readiness
+          │
+          ▼
+🚀 CAREER ROADMAP
 ```
 
 Tech Stack
@@ -74,8 +82,7 @@ Tech Stack
 
 To run locally 
 
-Prerequisites
-Make sure you have:
+Prerequisites: Make sure you have-
 
 ->Node.js
 ->npm
